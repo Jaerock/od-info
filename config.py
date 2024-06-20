@@ -37,7 +37,7 @@ def executable_path(rel_path: str):
 def load_secrets():
     """Load secrets.txt configuration file."""
     #20240620 secrets_filename = executable_path('instance/secret.txt')
-    secrets_filename = executable_path('instance/secret.txt')
+    secrets_filename = executable_path('secret.txt')
     if not os.path.exists(secrets_filename):
         with open(secrets_filename, 'w') as f:
             f.writelines(SECRETS_TEMPLATE)
